@@ -1,4 +1,5 @@
-const apiKey = '84b025c3c958339df5fe36150e5a27e1';
+require('dotenv').config();
+const apiKey = process.env.LASTFM_API_KEY;
 const startButton = document.getElementById('startButton');
 const gameArea = document.getElementById('gameArea');
 const currentArtistDiv = document.getElementById('currentArtist');
